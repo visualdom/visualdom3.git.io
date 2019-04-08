@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<section>
+			<p>Datalist</p>
+			<fieldset>
+				<label for="inputLista">LIsta de colores</label>
+				<input list="listacolores" name="inputLista">
+				<datalist id="listacolores">
+					<option value="Azul"></option>
+					<option value="Rojo"></option>
+					<option value="Amarillo"></option>
+					<option value="Negro"></option>
+					<option value="Blanco"></option>
+				</datalist>
+			</fieldset>
+		</section>
+		<section>
+			<p>Url input</p>
+			<fieldset>
+				<label for="url">Lista urls</label>
+				<input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" list="listaurls" required>
+				<datalist id="listaurls">
+					<option value="https://www.google.com" label="by Google"></option>
+					<option value="https://www.msn.com" label="by ms"></option>
+				</datalist>
+			</fieldset>
+		</section>
+		<section>
+			<p>Range</p>
+			<fieldset>
+				<label for="range">Rangos</label>
+				<input type="range" list="listanums" step="1" name="range" max="6" min="0">
+				<datalist id="listanums">
+					<option value="0" label="cero"></option>
+					<option value="1" label="uno"></option>
+					<option value="2" label="dos"></option>
+					<option value="3" label="tres"></option>
+					<option value="4" label="cuatro"></option>
+					<option value="5" label="cinco"></option>
+				</datalist>
+			</fieldset>
+		</section>
+		<section>
+			<p>Output</p>
+			<fieldset>
+				<label for="Output">Output</label>
+				<input type="Output" name="Output" placeholder="Ejemplo output">
+			</fieldset>
+		</section>
+		<section>
+			<p>Number</p>
+			<fieldset>
+				<label for="Number">Numeros</label>
+				<input type="number" name="listaNum" max="10" min="0">
+			</fieldset>
+		</section>
+		<section>
+			<p>Radio</p>
+			<fieldset>
+				<label for="Radio">Radio</label>
+				<input type="Radio" name="Radio">
+				<datalist>
+					<option value="1" label="uno"></option>
+					<option value="2" label="dos"></option>
+					<option value="3" label="tres"></option>
+				</datalist>
+			</fieldset>
+		</section>
+		<section>
+			<p>Tel</p>
+			<fieldset>
+				<label for="Tel">Tel</label>
+				<input type="Tel" name="telefono" placeholder="55 58585858">
+			</fieldset>
+		</section>
+		<section>
+			<p>Email</p>
+			<fieldset>
+				<label for="Email">Email</label>
+				<input type="Email" name="Email" placeholder="example@lose.com" pattern="*@*.*" required>
+			</fieldset>
+		</section>
+		<section>
+			<p>Color</p>
+			<fieldset>
+				<label for="Color">Color</label>
+				<input type="Color" name="Color">
+			</fieldset>
+		</section>
+		<section>
+			<p>Search</p>
+			<fieldset>
+				<label for="Search">Search</label>
+				<input type="Search" name="Search">
+			</fieldset>
+		</section>
+		<section>
+			<p>Date</p>
+			<fieldset>
+				<label for="Date">Date</label>
+				<input type="Date" name="Date">
+			</fieldset>
+		</section>
+		<section>
+			<p>Datetime</p>
+			<fieldset>
+				<label for="Datetime">Datetime</label>
+				<input type="Datetime" name="Datetime">
+			</fieldset>
+		</section>
+		<section>
+			<p>Datetime-local</p>
+			<fieldset>
+				<label for="Datetime-local">Datetime-local</label>
+				<input type="Datetime-local" name="Datetime-local">
+			</fieldset>
+		</section>
+		<section>
+			<p>Month</p>
+			<fieldset>
+				<label for="Month">Month</label>
+				<input type="Month" name="Month">
+			</fieldset>
+		</section>
+		<section>
+			<p>Time</p>
+			<fieldset>
+				<label for="Time">Time</label>
+				<input type="Time" name="Time" max="11:00" min="21:00" step="900">
+			</fieldset>
+		</section>
+		<section>
+			<p>Week</p>
+			<fieldset>
+				<label for="Week">Week</label>
+				<input type="Week" name="Week">
+			</fieldset>
+		</section>
+		<section>
+			<form>
+			  <div><label>Customer name: <input></label></div>
+			  <div><label>Telephone: <input type=tel></label></div>
+			  <div><label>E-mail address: <input type=email></label></div>
+			  <fieldset>
+			  <legend> Pizza Size </legend>
+			  <div><label> <input type=radio name=size> Small </label></div>
+			  <div><label> <input type=radio name=size> Medium </label></div>
+			  <div><label> <input type=radio name=size> Large </label></div>
+			  </fieldset>
+			  <fieldset>
+			  <legend> Pizza Toppings </legend>
+			  <div><label> <input type=checkbox> Bacon </label></div>
+			  <div><label> <input type=checkbox> Extra Cheese </label></div>
+			  <div><label> <input type=checkbox> Onion </label></div>
+			  <div><label> <input type=checkbox> Mushroom </label></div>
+			  </fieldset>
+			</form>	
+		</section>
+		<br>
+		<input type="submit" name="btn_enviar" value="Enviar">
+		<input type="reset" name="btn_limpiar" value="Limpiar">
+	</form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>entradas</title>
+</head>
+<body>
+	<form>
+			<section>
+				<fieldset>
+					<legend>Datos personales</legend>
+					<label for="Nombre">Nombre: </label>
+					<input type="text" name="Nombre" >
+					<br>
+					<label for="Edad">Edad: </label>
+					<input type="text" name="Edad" >
+				</fieldset>
+			</section>
+			<fieldset>
+				<legend>Cultura general</legend>
+				<section>
+					Capital de Noruega:
+					<label for="Copenhague">Copenhague</label>
+					<input type="Radio" name="radioCop">
+					<label for="Helsinki">Helsinki</label>
+					<input type="Radio" name="radioHel">
+					<label for="Oslo">Oslo</label>
+					<input type="Radio" name="radioOs">		
+				</section>	
+				<section>
+					Fecha de la revolucion Francesa:
+					<label for="1492">1492</label>
+					<input type="Radio" name="radio1492">
+					<label for="1789">1789</label>
+					<input type="Radio" name="radio1789">
+					<label for="1917">1917</label>
+					<input type="Radio" name="radio1917">		
+				</section>
+			</fieldset>
+		<input type="submit" name="btn_enviar" value="Enviar">
+		<input type="reset" name="btn_limpiar" value="Limpiar">
+	</form>
+	<form>
+		<h1>HTML5 number input</h1>
+		<section>
+			<div>
+				<p><strong><u>Ejemplo1</u></strong></p>
+				<label>Introduce tu edad</label>
+				<input type="number" name="inputNumber" min="1">
+				<input type="submit" name="btn_enviar" value="Enviar">
+			</div>
+		</section>
+		<section>
+			<div>
+				<p><strong><u>Ejemplo2</u></strong></p>
+				<label>Introduce tu edad (min=18, max=99 campo obligatorio)</label>
+				<input type="number" name="inputNumber" min="18" max="99" required="Por favor, rellene este campo.">
+				<input type="submit" name="btn_enviar" value="Enviar">
+			</div>
+		</section>
+		<section>
+			<div>
+				<p><strong><u>Ejemplo3</u></strong></p>
+				<label>Introduce tu edad (min=18, max=99 campo obligatorio)</label>
+				<input type="number" name="inputNumber" min="18" max="99" required="El valor debe superior o igual a 18">
+				<input type="submit" name="btn_enviar" value="Enviar">
+			</div>
+		</section>
+	</form>
+	<button onclick="document.getElementById('dialog-1').setAttribute('open', 'open')" type="button" name="button">Abierto</button>
+	<dialog id="dialog-1">
+		<button onclick="document.getElementById('dialog-1').removeAttribute('open')">Cerrar</button>
+		<p onclick="this.style.color='red'">este parrafo </p>
+		<p ondblclick="this.style.color='blue'">este parrafo </p>
+		<p onmouseup="this.style.color='pink'">este parrafo </p>
+		<p onmousedown="this.style.color='orange'">este parrafo </p>
+		<p onmousemove="this.style.color='gray'">este parrafo </p>
+		<p onmouseover="this.style.color='#00ff00'">este parrafo </p>
+		<p onmouseout="this.style.color='purple'">este parrafo </p>
+	</dialog>
+	<section>
+		<menu type="context" id="popup-menu">
+			<menuitem>Action</menuitem>
+			<menuitem>Other Action</menuitem>
+			<menuitem>Other more action</menuitem>			
+		</menu>
+	</section>
+</body>
+</html>
+			  

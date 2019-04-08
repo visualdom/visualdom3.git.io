@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tablas</title>
+</head>
+<body>
+	<h3>Informacion sobre el producto</h3>
+	<section>
+		<fieldset>
+			<legend>Datos basicos</legend>
+			<label for="Nombre">Nombre</label>
+			<br>
+			<input type="txt" name="Nombre" size="50">
+			<br>
+			<label for="Descripcion">Descripcion</label>
+			<br>
+			<textarea name="descipcion" rows="10" cols="50"></textarea>
+			<br>
+			<label for="archivo">Foto</label>
+			<button>Seleccionar archivo</button>nada selccionado
+			<br><br>
+			<input type="checkbox" name="caja-visitas">
+			<label for="caja-visitas">Añadir contador de visitas</label>
+		</fieldset>
+	</section>
+	<section>
+		<fieldset>
+			<legend>Datos economicos</legend>
+			<label>Precio</label>
+			<input type="text" name="Precio"> E
+			<label>Impuestos</label>
+			<input type="number" name="Impuestos" min="0" max="100">
+			<br><br>
+			<label>Promocion</label>
+			<br>
+			<input type="radio" name="ninguno">Ninguno
+			<br>
+			<input type="radio" name="transporte">Transporte gratuito
+			<br>
+			<input type="radio" name="Descuento">Descuento 5%
+		</fieldset>
+	</section>
+	<section>
+		<caption>Analisis de ventas anuales</caption>
+		<table border="2" cellspacing="0" cellpadding="15" bordercolor="#0000FF" id="tabla-Ventas"
+				data-anios ="4"
+				data-numprod ="4"
+				data-nombprod ="Producto A Producto B Producto C Producto D"
+				data-titulo ="Expansion de ventas">
+			<thead>
+				<tr>
+					<th rowspan="2">año</th>
+					<th colspan="4">Expansion de ventas</th>
+				</tr>
+				<tr>
+					<th>Producto A</th>
+					<th>Producto B</th>
+					<th>Producto C</th>
+					<th>Producto D</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>N-3</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>N-2</td>
+					<td>3</td>
+					<td>5</td>
+					<td>8</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>N-1</td>
+					<td>4</td>
+					<td>4</td>
+					<td>7</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>N</td>
+					<td>5</td>
+					<td>7</td>
+					<td>6</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td rowspan="2">AÑO</td>
+					<td>Producto A</td>
+					<td>Producto B</td>
+					<td>Producto C</td>
+					<td>Producto D</td>
+				</tr>
+				<tr>
+					<th colspan="4">Expansion de ventas</th>
+				</tr>
+			</tfoot>
+		</table>
+	</section>
+	<script type="text/javascript">
+		var tabla = document.getElementById("tabla-Ventas");
+		var anio = tabla.dataset.anios;
+		var productos = tabla.dataset.numprod;
+		var nomProductos = tabla.dataset.nombprod;
+		var tituloTabla = tabla.dataset.titulo;
+
+		console.log(anio);
+		console.log(productos);
+		console.log(nomProductos);
+		console.log(tituloTabla);
+	</script>
+</body>
+</html>
