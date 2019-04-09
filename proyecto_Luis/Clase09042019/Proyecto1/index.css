@@ -1,0 +1,60 @@
+body{
+	color: white;
+	font-size: 20px;
+}
+header {
+	border-radius: 10px;
+	background-color: rgb(255, 102, 0);
+	width: 50%;
+	height: 50px;
+	
+}
+
+nav {
+	border-radius: 10px;
+	background-color: rgb(255, 219, 77);
+	width: 50%;
+	height: 50px;
+	margin-bottom: 5px;
+}
+main {
+	border-radius: 10px;
+	background-color: rgb(0, 128, 96);
+	width: 37%;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+	align-items: bottom;
+}
+aside {
+	border-radius: 10px;
+	background-color: rgb(77, 166, 255);
+	width: 13%;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+footer {
+	border-radius: 10px;
+	background-color: rgb(159, 223, 191);
+	width: 50%;
+	height: 50px;
+	margin-top: 2px;
+}
+article {
+	border-radius: 10px;
+	background-color: rgb(159, 223, 191);
+	width: 40%;
+	height: 150px;
+	display: inline-block;
+	margin: 5px;
+	vertical-align: bottom;
+}
+main p{
+	margin: 5px;
+	display: block;
+	height: 100px;
+}
+.articulo1{
+	margin-left: 29px;
+}

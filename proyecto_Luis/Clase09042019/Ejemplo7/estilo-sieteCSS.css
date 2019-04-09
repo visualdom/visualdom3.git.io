@@ -1,0 +1,69 @@
+
+@charset "utf-8"
+
+/*Selectores simples*/
+
+*{
+	color: blue;
+}
+
+body{
+	background-color:#D5DBDB;
+}
+
+p{
+	color: green;
+}
+
+#e-dos{
+	color: black;
+	font-size: 40px;
+}
+
+li#e-uno{
+	font-size: 25px;
+}
+
+.class-parr-2 {
+	color: black;
+}
+
+p.class-parr-3 {
+	color: pink;
+}
+div {
+	border: yellow 3px solid;
+}
+div h2{									/**/
+	color: red;							/**/
+}										/*A todos los descendientes*/
+div p{				/*div li p*/		/**/
+	color: deeppink;					/**/
+}
+div.div-4 > p {				/*Solo busca los hijos inmediatos*/
+	color: orange;
+}
+
+article.artic + span {		/*busca el hermano inmediato de la clase artic en este caso*/
+	font-size: 40px;
+	color: black;
+}
+
+article~span{			/*Afecta a todos los hermanos de article*/
+	font-size: 30px;
+	color: turquoise;
+}
+th[scope] {				/*afecta a los th qu etengan scope*/
+	color: yellowgreen;
+}
+th[scope="row"] {			/*afecta a los atributos que tengan scope=row que pertenescan a th*/
+	color: mediumslateblue;
+	background-color: goldenrod;
+}
+td[class="price"]{
+	background-color: darkgrey;
+}
+td[class~="product"]{			/*Afecta siempre que en el atributo exista la palabra product*/
+	background-color: yellowgreen;
+	text-transform: uppercase; 
+}
