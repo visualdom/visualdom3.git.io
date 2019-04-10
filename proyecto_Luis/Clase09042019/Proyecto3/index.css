@@ -1,0 +1,41 @@
+@charset "utf-8"
+body{
+	text-align: right;
+}
+table {
+	border-collapse: collapse;
+	width: 300px;
+	height: 400px;
+	background-color: #e6e6e6;
+	text-align: center;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 300;
+	font-size: 25px;
+
+}
+table thead tr th{
+	border: 1px solid black;
+	background-color: #737373;
+	color: white;
+	text-align: right;
+	height: 70px;
+	font-size: 50px;
+	font-weight: lighter;
+
+}
+table tbody tr td{
+	border: 1px solid black;	
+}
+table tfoot tr td{
+	border: 1px solid black;
+	font-weight: bold;	
+	height: 50px;
+}
+.fila4{
+	background-color: #ff8c1a;
+}
+.cero{
+	text-align: left;
+	padding-left: 33px;
+	font-weight: lighter;
+}
